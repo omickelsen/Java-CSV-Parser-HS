@@ -56,7 +56,7 @@ public class CSVParser {
 
                 } else {
                     if (pieces[j] == "," && tempX.length() == 0) {
-                    } else if (pieces[j] != ",") {
+                    } else if (!pieces[j].equals(",")) {
                         tempX += pieces[j];
                     } else {
                         parcedStr += "[" + tempX + "]";
