@@ -56,7 +56,7 @@ public class CSVParser {
 
                 } else {
                     if (pieces[j] == "," && tempX.length() == 0) {
-                    } else if (!pieces[j].equals(",")) {
+                    } else if (!pieces[j].equals (",")) {
                         tempX += pieces[j];
                     } else {
                         parcedStr += "[" + tempX + "]";
@@ -67,7 +67,7 @@ public class CSVParser {
                         parcedStr = "";
                         tempX = "";
                         startNewPiece = true;
-                        if (j + 1 < pieces.length && !pieces[j + 1].equals("\"")) {
+                        if (j + 1 < pieces.length && pieces[j + 1].equals("\"")) {
                             startsWithQuote = true;
                         }
                     }
