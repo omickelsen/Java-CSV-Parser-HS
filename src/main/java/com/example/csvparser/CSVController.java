@@ -18,7 +18,7 @@ public class CSVController {
                 "\"Vox, Bono\",\"414-45-1475\",51,\"801-555-2100\",\"Opratory=3,PCP=2\"";
 
         CSVParser parser=new CSVParser();
-      String result =  parser.parseCSVString(testInput);
+      String result =  parser.parseCSVString(csv);
 
        return result;
 
